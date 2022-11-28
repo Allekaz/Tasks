@@ -27,4 +27,4 @@ int ThirdDigit(int number)
 if (ThirdDigit(number) == -1)
 Console.WriteLine("Третьей цифры нет!");
 else
-Console.WriteLine($"Третья цифра {ThirdDigit(number)}");
+Console.WriteLine($"Третья цифра: {ThirdDigit(number)}");
