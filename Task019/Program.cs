@@ -6,3 +6,23 @@
 // 12821 -> да
 // 23432 -> да
 
+int num;
+int r;
+int sum = 0;
+int t;
+
+Console.Write("\n\n");
+Console.Write("Является ли число палиндромом?:\n");
+Console.Write("----------------------------------------");
+Console.Write("\n\n");
+Console.Write("Введите число: ");
+num = Convert.ToInt32(Console.ReadLine());
+for (t = num; num != 0; num = num / 10)
+{
+    r = num % 10;
+    sum = sum * 10 + r;
+}
+if (t == sum)
+    Console.Write("{0} Это число палиндром.\n", t);
+else
+    Console.Write("{0} Это число не является палиндромом.\n", t);
